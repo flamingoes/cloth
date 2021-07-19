@@ -1,0 +1,11 @@
+<view wx:if="{{userAuth == 1}}">
+  工单列表
+  <view>
+    <view wx:for="{{infoList}}" wx:key="id" class="warp">
+      <view><text>工单名称：{{item.name}}</text></view>
+      <view class="warp_code"><text>工单编号：{{item.clothCode}}</text></view>
+      <view><button type="primary" bindtap="toDetail" data-clothCode="{{item.clothCode}}" class="warp_btn">查看详情</button></view>
+    </view>
+  </view>
+</view>
+<view wx:else>请登陆后查看</view>

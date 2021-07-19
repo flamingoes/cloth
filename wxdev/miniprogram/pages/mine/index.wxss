@@ -1,0 +1,7 @@
+/* .container{background-color: #e1e1e1;} */
+.top{background-color: #c3dfc8; padding: 30px 0 20px 0; text-align: center;}
+.userinfo-avatar{width: 50px; height: 50px; border-radius: 200px; margin: 0 auto;}
+.nickName{font-size: 0.9rem; margin-top: 10px;}
+.middle{background-color: #ffffff; margin-top: 15px;}
+.middle .text{line-height: 40px; font-size: 0.9rem; color: gray; padding: 0 40px; border-bottom: 1px dashed}
+.middle .icon{float: right;}

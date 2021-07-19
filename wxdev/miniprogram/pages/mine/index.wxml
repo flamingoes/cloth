@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!userAuth}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <view class="top">
+        <view><image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image></view>
+        <view class="nickName">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+    <view class="middle">
+      <view class="text" bindtap="mineClick" data-type="part"><text>我的部门信息</text><text class="icon">></text></view>
+      <view class="text" bindtap="mineClick" data-type="flow"><text>查看流水线</text><text class="icon">></text></view>
+    </view>
+  </view>
+</view>
